@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./.container/dotnet
+      args:
+        - VARIANT=6.0-bullseye
+        - NODE_VERSION=none
+    # ports:
+    #  - 5127:5127
+    #  - 4173:4173
+    volumes:
+      - .:/workspace:cached
+      - node_modules:/workspace/KaizuyaHanbai/Web/client-app/node_modules
+    command: sleep infinity
+volumes:
+  node_modules:
+  
