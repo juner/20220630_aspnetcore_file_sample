@@ -12,7 +12,6 @@ services:
     #  - 4173:4173
     volumes:
       - .:/workspace:cached
-      - node_modules:/workspace/KaizuyaHanbai/Web/client-app/node_modules
     command: sleep infinity
 volumes:
   node_modules:
