@@ -1,0 +1,1 @@
+# 20220630_aspnetcore_file_sample
